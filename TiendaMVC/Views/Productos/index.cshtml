@@ -1,0 +1,29 @@
+@model IEnumerable<Producto>
+@{
+    ViewData["Title"] = "Listado de productos";
+}
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Nombre</td>
+                <td>@item.Precio.ToString("C")</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">Ver Detalle</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
