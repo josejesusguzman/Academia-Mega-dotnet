@@ -1,12 +1,12 @@
 @model TiendaMVC.Models.Producto
 @{
-    ViewData["Title"] = "Crear producto";
+    ViewData["Title"] = "Editar Producto";
 }
 
 <h1>@ViewData["Title"]</h1>
 
-<form asp-action="Create" method="post">
-
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id"/>
     <div class="form-group">
         <label asp-for="Nombre"></label>
         <input asp-for="Nombre" class="form-control"/>
@@ -17,7 +17,7 @@
         <input asp-for="Precio" class="form-control"/>
         <span asp-validation-for="Precio" class="text-danger"></span>
     </div>
-    <button type="submit" class="btn btn-primary">Guardar</button>
+    <button type="submit" class="btn btn-primary">Actualizar</button>
     <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
 
 </form>
