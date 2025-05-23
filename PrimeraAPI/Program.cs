@@ -5,6 +5,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<ProductoService>();
+builder.Services.AddScoped<UsuarioService>();
+
+// middleware
 
 var app = builder.Build();
 
