@@ -1,29 +1,29 @@
-@model IEnumerable<Producto>
+@model IEnumerable<TiendaMVC.Models.Producto>
 @{
-    ViewData["Title"] = "Listado de productos";
+    ViewData["Title"] = "Productos";
 }
 
-<table>
+<h1>Productos</h1>
+<p>
+    <a asp-action="Create" class="btn btn-success">Nuevo Producto</a>
+</p>
+<table class="table">
     <thead>
-        <tr>
-            <th>Id</th>
-            <th>Nombre</th>
-            <th>Precio</th>
-            <th>Acciones</th>
-        </tr>
+        <tr><th>Id</th><th>Nombre</th><th>Precio</th><th></th></tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.Id</td>
-                <td>@item.Nombre</td>
-                <td>@item.Precio.ToString("C")</td>
-                <td>
-                    <a asp-action="Details" asp-route-id="@item.Id">Ver Detalle</a>
-                </td>
-            </tr>
-        }
+    @foreach (var item in Model) 
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Nombre</td>
+            <td>@item.Precio.ToString("C")</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Ver</a>
+                <a asp-action="Edit"    asp-route-id="@item.Id" class="btn btn-primary btn-sm">Editar</a>
+                <a asp-action="Delete"  asp-route-id="@item.Id" class="btn btn-danger btn-sm">Eliminar</a>
+            </td>
+        </tr>
+    }
     </tbody>
-
 </table>

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using PrimeraAPI.Models;
 using PrimeraAPI.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace PrimeraAPI.Controllers
 {
@@ -18,6 +19,7 @@ namespace PrimeraAPI.Controllers
         /*
                 - CREATE - 
         */
+        [Authorize]
         [HttpPost] // POST /api/productos
         public async Task<IActionResult> Create(Producto nuevo)
         {
@@ -28,7 +30,7 @@ namespace PrimeraAPI.Controllers
         /*
                 - READ - 
         */
-
+        [Authorize]
         [HttpGet] // GET /api/productos
         public async Task<IActionResult> GetAll()
         {
@@ -36,6 +38,7 @@ namespace PrimeraAPI.Controllers
             return Ok(lista);
         }
 
+        [Authorize]
         [HttpGet("{id}")] // GET /api/productos/1
         public async Task<IActionResult> GetById(int id)
         {
@@ -48,6 +51,7 @@ namespace PrimeraAPI.Controllers
         /*
                 - UPDATE - 
         */
+        [Authorize]
         [HttpPut("{id}")] // PUT /api/productos/1
         public async Task<IActionResult> Update(int id, Producto actualizado)
         {
@@ -59,6 +63,7 @@ namespace PrimeraAPI.Controllers
         /*
                 - DELETE -
         */
+        [Authorize]
         [HttpDelete("{id}")] // DELETE /api/productos/1
         public async Task<IActionResult> Delete(int id)
         {

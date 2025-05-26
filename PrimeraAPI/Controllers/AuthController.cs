@@ -30,6 +30,15 @@ namespace PrimeraAPI.Controllers
             return Ok(new { token });
         }
 
+        [HttpPost("login")]
+        public async Task<IActionResult> Login(UserLogin user)
+        {
+            var valid = await _usuarioService.ValidateCredentialsAsync(user.Username, user.Password);
+            if (!valid) return Unauthorized(new { message = "Acceso no autorizado!!! Credenciales no validas" });
+            var token = GenerateToken(user.Username);
+            return Ok(new { token });
+        }
+
         private string GenerateToken(string username)
         {
             var key = Encoding.ASCII.GetBytes(_config["JwtKey"]!);

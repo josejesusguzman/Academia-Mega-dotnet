@@ -44,7 +44,21 @@ namespace PrimeraAPI.Data
             {
                 return false;
             }
+        }
 
+        public async Task<bool> ValidateCredentialsAsync(string username, string pass)
+        {
+            var hash = Hash(pass);
+            using var connection = new SqlConnection(_connectionString);
+            await connection.OpenAsync();
+
+            var cmd = new SqlCommand(
+                "SELECT COUNT(1) FROM Usuarios WHERE NombreUsuario=@u AND PasswordHash=@h", connection
+            );
+            cmd.Parameters.AddWithValue("@u", username);
+            cmd.Parameters.AddWithValue("@h", hash);
+            var count = (int)await cmd.ExecuteScalarAsync()!;
+            return count == 1;
         }
 
     }

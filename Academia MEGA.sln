@@ -4,6 +4,10 @@ VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{3A798C92-DA22-B784-11D5-249F2DEA19E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeraAPI", "PrimeraAPI\PrimeraAPI.csproj", "{B77BBEEE-1DC6-CA5B-46B4-62403C1C308E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaMVC", "TiendaMVC\TiendaMVC.csproj", "{DA8371B4-81F8-59B8-DE9D-9BB3524C4B1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,11 +18,19 @@ Global
 		{3A798C92-DA22-B784-11D5-249F2DEA19E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A798C92-DA22-B784-11D5-249F2DEA19E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A798C92-DA22-B784-11D5-249F2DEA19E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B77BBEEE-1DC6-CA5B-46B4-62403C1C308E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B77BBEEE-1DC6-CA5B-46B4-62403C1C308E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B77BBEEE-1DC6-CA5B-46B4-62403C1C308E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B77BBEEE-1DC6-CA5B-46B4-62403C1C308E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA8371B4-81F8-59B8-DE9D-9BB3524C4B1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA8371B4-81F8-59B8-DE9D-9BB3524C4B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA8371B4-81F8-59B8-DE9D-9BB3524C4B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA8371B4-81F8-59B8-DE9D-9BB3524C4B1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {CA315EC0-0004-408E-89A6-CABA1EB95E76}
+		SolutionGuid = {B1414BC2-48FC-401B-9FF5-189D2F5C72AD}
 	EndGlobalSection
 EndGlobal
