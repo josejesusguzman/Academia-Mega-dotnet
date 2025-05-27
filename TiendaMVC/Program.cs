@@ -3,16 +3,22 @@ using TiendaMVC.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddHttpContextAccessor();
+// Habilitamos las sesiones
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
-builder.Services.AddHttpClient<IProductoApiService, ProductoApiService>(client =>
+builder.Services.AddHttpClient<ApiClient>(client =>
 {
     client.BaseAddress = new Uri("http://localhost:5240");
 });
 
-builder.Services.AddScoped<HttpContextAccessor>();
-builder.Services.AddSession();
+// Add services to the container.
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 

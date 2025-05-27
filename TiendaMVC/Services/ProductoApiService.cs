@@ -1,4 +1,5 @@
 using System.Net.Http.Json;
+using System.Net.Http.Headers;
 using TiendaMVC.Models;
 
 namespace TiendaMVC.Services
@@ -7,7 +8,16 @@ namespace TiendaMVC.Services
     {
 
         private readonly HttpClient _http;
-        public ProductoApiService(HttpClient http) => _http = http;
+        private readonly IHttpContextAccessor _context;
+        public ProductoApiService(HttpClient http, IHttpContextAccessor context)
+        {
+            _http = http;
+            _context = context;
+
+            var token = _context.HttpContext!.Session.GetString("JWToken");
+            if (!string.IsNullOrEmpty(token))
+                _http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+        } 
 
         public async Task<List<Producto>> GetAllAsync() =>
             await _http.GetFromJsonAsync<List<Producto>>("api/productos") ?? new List<Producto>();
