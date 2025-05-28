@@ -1,11 +1,13 @@
 @model User
 @{
-    ViewData["Title"] = "Inicio de sesión";
+    ViewData["Title"] = "Registro";
 }
 
-<h2>Login</h2>
-<form asp-action="Login" method="post">
+<h2>Registro</h2>
+
+<form asp-action="Register" method="post">
     <div>
+        <div></div>
         <label>Usuario</label>
         <input asp-for="Username" />
         <span asp-validation-for="Username"></span>
@@ -15,9 +17,11 @@
         <input asp-for="Password" type="password" />
         <span asp-validation-for="Password"></span>
     </div>
-    <button type="submit">Ingresar</button>
+    <button type="submit">Crear cuenta</button>
+    </div>
 </form>
-<a asp-action="Register">¿No tienes una cuenta? Regístrate aquí</a>
+
+<a asp-action="Login">Ya tienes una cuenta? Inicia sesión aquí</nav></a>
 
 @section Scripts {
     @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }

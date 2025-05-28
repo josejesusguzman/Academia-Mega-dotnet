@@ -7,16 +7,16 @@ namespace TiendaMVC.Controllers
 {
     public class ProductosController : Controller
     {
-        private readonly IProductoApiService _api;
-        public ProductosController(IProductoApiService api) => _api = api;
+        private readonly ApiClient _api;
+        public ProductosController(ApiClient api) => _api = api;
 
         //GET /Productos
         public async Task<IActionResult> Index()
         {
-            var products = await _api.GetAllAsync();
+            var products = await _api.GetProductosAsync();
             return View(products);
         }
-
+/*
         // GET /Productos/Details/5
         public async Task<IActionResult> Details(int id)
         {
@@ -68,6 +68,6 @@ namespace TiendaMVC.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
-
+*/
     }
 }

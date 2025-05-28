@@ -26,6 +26,27 @@ namespace TiendaMVC.Controllers
             return RedirectToAction("Index", "Productos");
         }
 
+        [HttpGet]
+        public IActionResult Register() => View();
+
+        [HttpPost]
+        public async Task<IActionResult> Register(User user)
+        {
+            if (!ModelState.IsValid) return View(user);
+            var valido = await _api.RegisterAsync(user);
+            if (!valido)
+            {
+                ModelState.AddModelError("", "Usuario ya registrado");
+                return View(user);
+            }
+            return RedirectToAction("Index", "Productos");
+        }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("JWToken");
+            return RedirectToAction("Login");
+        }
 
     }
 }
