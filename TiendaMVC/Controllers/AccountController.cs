@@ -11,11 +11,19 @@ namespace TiendaMVC.Controllers
         public AccountController(ApiClient api) => _api = api;
 
         [HttpGet]
-        public IActionResult Login() => View();
+        public IActionResult Login()
+        {
+            var token = HttpContext.Session.GetString("JWToken");
+            if (!string.IsNullOrEmpty(token))
+                return RedirectToAction("Index", "Productos");
+
+            return View();
+        } 
 
         [HttpPost]
         public async Task<IActionResult> Login(User user)
         {
+
             if (!ModelState.IsValid) return View(user);
             var valido = await _api.LoginAsync(user);
             if (!valido)
@@ -27,7 +35,14 @@ namespace TiendaMVC.Controllers
         }
 
         [HttpGet]
-        public IActionResult Register() => View();
+        public IActionResult Register()
+        {
+            var token = HttpContext.Session.GetString("JWToken");
+            if (!string.IsNullOrEmpty(token))
+                return RedirectToAction("Index", "Productos");
+
+            return View();
+        }
 
         [HttpPost]
         public async Task<IActionResult> Register(User user)

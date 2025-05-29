@@ -5,6 +5,9 @@
 
 <h2>Login</h2>
 <form asp-action="Login" method="post">
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
     <div>
         <label>Usuario</label>
         <input asp-for="Username" />

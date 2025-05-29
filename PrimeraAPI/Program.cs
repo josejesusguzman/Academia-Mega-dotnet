@@ -30,6 +30,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
+builder.Services.AddSwaggerGen();
+
 var app = builder.Build();
 
 
@@ -37,4 +39,8 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.UseHttpsRedirection();
 app.MapControllers();
+
+app.UseSwagger();
+app.UseSwaggerUI();
+
 app.Run();
