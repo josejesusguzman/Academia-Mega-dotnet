@@ -1,7 +1,50 @@
 ﻿@page "/"
+@using TaskManagerClient.Services;
+@using TaskManagerClient.Models;
 
-<PageTitle>Home</PageTitle>
+@inject ITaskReader TaskReader
+@inject ITaskWriter TaskWriter
 
-<h1>Hello, world!</h1>
+<h2>Tareas</h2>
 
-Welcome to your new app.
+@if (tasks is null)
+{
+    <p><em>Cargando...</em></p>
+}
+else 
+{
+    <ul class="list-group">
+        @foreach (var t in tasks)
+        {
+            <li class="list-group-item d-flex justify-content-between">
+                <span>
+                    <input type="checkbox" @bind="t.IsDone" />
+                    @t.Title
+                </span>
+                <button class="btn btn-danger btn-sm"
+                    @onclick="@(()=>Delete(t.id))">Elimina</button>
+
+            </li>
+        }
+    </ul>
+    <TaskForm OnSaved="Refresh"/>
+}
+
+@code
+{
+    List<TaskItem>? tasks;
+
+    protected override async Task OnInitializedAsync() => await Refresh();
+
+    async Task Refresh()
+    {
+        tasks = (await TaskReader.GetAllAsync()).ToList();
+    }
+
+    async Task Delete(Guid id)
+    {
+        await TaskWriter.DeleteAsync(id);
+        await Refresh();
+    }
+
+}

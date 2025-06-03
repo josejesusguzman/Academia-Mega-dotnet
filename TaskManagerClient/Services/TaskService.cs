@@ -13,7 +13,7 @@ public class TaskService(HttpClient http) : ITaskReader, ITaskWriter
     public async Task<TaskItem> AddAsync(TaskItem task)
     {
         var response = await http.PostAsJsonAsync(ApiEndpoints.Tasks, task);
-        return await response.Content - ReadFromJsonAsync<TaskItem>() ??
+        return await response.Content.ReadFromJsonAsync<TaskItem>() ??
             throw new InvalidOperationException("Respuesta vacia");
     }
 

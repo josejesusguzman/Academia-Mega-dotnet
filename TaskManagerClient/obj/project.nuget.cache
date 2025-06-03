@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4CygKaAKSNA=",
+  "dgSpecHash": "2avEF+DYTdw=",
   "success": true,
   "projectFilePath": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManagerClient\\TaskManagerClient.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,10 @@
     "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\microsoft.aspnetcore.components.web\\8.0.16\\microsoft.aspnetcore.components.web.8.0.16.nupkg.sha512",
     "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\8.0.16\\microsoft.aspnetcore.components.webassembly.8.0.16.nupkg.sha512",
     "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\8.0.16\\microsoft.aspnetcore.components.webassembly.devserver.8.0.16.nupkg.sha512",
+    "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.3.0\\microsoft.aspnetcore.cors.2.3.0.nupkg.sha512",
+    "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
+    "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.3.0\\microsoft.aspnetcore.http.extensions.2.3.0.nupkg.sha512",
+    "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
     "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\microsoft.aspnetcore.metadata\\8.0.16\\microsoft.aspnetcore.metadata.8.0.16.nupkg.sha512",
     "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
@@ -28,9 +32,12 @@
     "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\microsoft.jsinterop\\8.0.16\\microsoft.jsinterop.8.0.16.nupkg.sha512",
     "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\microsoft.jsinterop.webassembly\\8.0.16\\microsoft.jsinterop.webassembly.8.0.16.nupkg.sha512",
+    "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\microsoft.net.http.headers\\2.3.0\\microsoft.net.http.headers.2.3.0.nupkg.sha512",
     "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.16\\microsoft.net.illink.tasks.8.0.16.nupkg.sha512",
     "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.16\\microsoft.net.sdk.webassembly.pack.8.0.16.nupkg.sha512",
+    "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
     "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
+    "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.16\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.16.nupkg.sha512"
   ],
   "logs": []

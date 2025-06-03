@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManagerClient\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManagerClient\\obj\\Debug\\net8.0\\compressed\\yfkb99yyms.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManagerClient\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TaskManagerClient.styles.css",
+      "PackagePath": "staticwebassets\\TaskManagerClient.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManagerClient\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManagerClient\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManagerClient\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManagerClient\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManagerClient\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManagerClient\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManagerClient\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TaskManagerClient.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.TaskManagerClient.props",
+      "PackagePath": "build\\TaskManagerClient.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TaskManagerClient.props",
+      "PackagePath": "buildMultiTargeting\\TaskManagerClient.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.TaskManagerClient.props",
+      "PackagePath": "buildTransitive\\TaskManagerClient.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

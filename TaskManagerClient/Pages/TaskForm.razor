@@ -1,0 +1,25 @@
+@using TaskManagerClient.Services;
+@using TaskManagerClient.Models;
+
+@inject ITaskWriter TaskWriter
+
+<EditForm Model="task" OnValidSubmit="Save">
+    <InputText @bind-Value="task.Title" class="form-control" placeholder="Titulo"/>
+    <InputTextArea @bind-Value="task.Description" class="form-control my-2" placeholder="Descripción"/>
+    <button class="btn btn-primary">Guardar</button>
+</EditForm>
+
+@code
+{
+    private TaskItem task = new();
+
+    [Parameter] public EventCallback OnSaved { get; set; }
+    
+    async Task Save()
+    {
+        await TaskWriter.AddAsync(task);
+        task = new();
+        await OnSaved.InvokeAsync();
+    }
+
+}
