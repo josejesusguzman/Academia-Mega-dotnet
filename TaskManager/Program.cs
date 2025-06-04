@@ -19,7 +19,9 @@ builder.Services.AddControllers();
 
 builder.Services.AddScoped<INotificationService, EmailNotificationService>();
 builder.Services.AddScoped<INotificationService, SmsNotificationService>();
-builder.Services.AddScoped<ITaskRepository, InMemoryTaskRepository>();
+builder.Services.AddSingleton<ITaskRepository, InMemoryTaskRepository>();
+//builder.Services.AddScoped<ITaskRepository, InMemoryTaskRepository>();
+
 
 
 builder.Services.AddSwaggerGen();
