@@ -4,14 +4,14 @@
     "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManager\\TaskManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManager\\TaskManager.csproj": {
+    "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManager.Shared\\TaskManager.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManager\\TaskManager.csproj",
-        "projectName": "TaskManager",
-        "projectPath": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManager\\TaskManager.csproj",
+        "projectUniqueName": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManager.Shared\\TaskManager.Shared.csproj",
+        "projectName": "TaskManager.Shared",
+        "projectPath": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManager.Shared\\TaskManager.Shared.csproj",
         "packagesPath": "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManager\\obj\\",
+        "outputPath": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManager.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ROG Zephyrus G16\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -42,10 +42,76 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManager\\TaskManager.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManager\\TaskManager.csproj",
+        "projectName": "TaskManager",
+        "projectPath": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManager\\TaskManager.csproj",
+        "packagesPath": "C:\\Users\\ROG Zephyrus G16\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManager\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ROG Zephyrus G16\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManager.Shared\\TaskManager.Shared.csproj": {
+                "projectPath": "C:\\Users\\ROG Zephyrus G16\\Documents\\PROGRAMMING\\Academia MEGA\\TaskManager.Shared\\TaskManager.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.16, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.2.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
