@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TaskManagerObserver/1.0.0": {
+        "runtime": {
+          "TaskManagerObserver.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TaskManagerObserver/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

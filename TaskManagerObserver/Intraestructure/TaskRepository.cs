@@ -1,6 +1,8 @@
 using Domain;
 using Domain.Events;
 
+namespace Intraestructure;
+
 public class TaskRepository
 {
     private readonly List<TaskItem> _store = [];

@@ -1,6 +1,6 @@
-using Domain.Events;
+using TaskManager.Shared.Events;
 
-namespace Intraestructure;
+namespace TaskManager.Shared.PubSub;
 
 public class EventBus : IObservable<TaskEvent>
 {

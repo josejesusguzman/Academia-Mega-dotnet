@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace Subscribers;
 
-public class EmailNotifier : IObserver<TaskEvent>
+public class SmsNotifier : IObserver<TaskEvent>
 {
     public void OnCompleted() { }
 
@@ -11,7 +11,7 @@ public class EmailNotifier : IObserver<TaskEvent>
 
     public void OnNext(TaskEvent taskEvent)
     {
-        if (taskEvent.EventName == "Created")
-            Console.WriteLine($"[EMAIL] Nueva tarea: {taskEvent.Payload.Title}");
+        if (taskEvent.EventName == "Deleted")
+            Console.WriteLine($"[SMS] Tarea eliminada: {taskEvent.Payload.Title}");
     }
 }
