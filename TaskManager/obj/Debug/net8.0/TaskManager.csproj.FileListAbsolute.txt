@@ -32,3 +32,13 @@ C:\Users\ROG Zephyrus G16\Documents\PROGRAMMING\Academia MEGA\TaskManager\obj\De
 C:\Users\ROG Zephyrus G16\Documents\PROGRAMMING\Academia MEGA\TaskManager\obj\Debug\net8.0\TaskManager.pdb
 C:\Users\ROG Zephyrus G16\Documents\PROGRAMMING\Academia MEGA\TaskManager\obj\Debug\net8.0\TaskManager.genruntimeconfig.cache
 C:\Users\ROG Zephyrus G16\Documents\PROGRAMMING\Academia MEGA\TaskManager\obj\Debug\net8.0\ref\TaskManager.dll
+C:\Users\ROG Zephyrus G16\Documents\PROGRAMMING\Academia MEGA\TaskManager\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ROG Zephyrus G16\Documents\PROGRAMMING\Academia MEGA\TaskManager\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\ROG Zephyrus G16\Documents\PROGRAMMING\Academia MEGA\TaskManager\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\ROG Zephyrus G16\Documents\PROGRAMMING\Academia MEGA\TaskManager\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ROG Zephyrus G16\Documents\PROGRAMMING\Academia MEGA\TaskManager\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\ROG Zephyrus G16\Documents\PROGRAMMING\Academia MEGA\TaskManager\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\ROG Zephyrus G16\Documents\PROGRAMMING\Academia MEGA\TaskManager\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\ROG Zephyrus G16\Documents\PROGRAMMING\Academia MEGA\TaskManager\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\ROG Zephyrus G16\Documents\PROGRAMMING\Academia MEGA\TaskManager\bin\Debug\net8.0\TaskManager.Shared.dll
+C:\Users\ROG Zephyrus G16\Documents\PROGRAMMING\Academia MEGA\TaskManager\bin\Debug\net8.0\TaskManager.Shared.pdb

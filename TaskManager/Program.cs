@@ -1,5 +1,7 @@
 using TaskManager.Repositories;
 using TaskManager.Services;
+using TaskManager.Shared.PubSub;
+using TaskManager.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +22,10 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<INotificationService, EmailNotificationService>();
 builder.Services.AddScoped<INotificationService, SmsNotificationService>();
 builder.Services.AddSingleton<ITaskRepository, InMemoryTaskRepository>();
+
+builder.Services.AddSingleton<EventBus>();
+builder.Services.AddSignalR();
+
 //builder.Services.AddScoped<ITaskRepository, InMemoryTaskRepository>();
 
 
@@ -29,6 +35,9 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 app.MapControllers();
+
+app.MapHub<TaskEventHub>("/taskEvents");
+
 app.UseSwagger();
 app.UseSwaggerUI();
 

@@ -1,4 +1,4 @@
-using TaskManager.Models;
+using TaskManager.Shared.Domain;
 
 namespace TaskManager.Repositories
 {

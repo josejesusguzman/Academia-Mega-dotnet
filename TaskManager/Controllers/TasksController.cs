@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using TaskManager.Models;
+using TaskManager.Shared.Domain;
 using TaskManager.Repositories;
 using TaskManager.Services;
 
@@ -22,7 +22,7 @@ namespace TaskManager.Controllers
         public async Task<IEnumerable<TaskItem>> GetAll() =>
             await _repo.GetAllAsync();
 
-        [HttpPost]
+        [HttpPost] // POST /api/tasks
         public async Task<ActionResult<TaskItem>> Create(TaskItem taskItem)
         {
             await _repo.AddAsync(taskItem);
