@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -7,6 +7,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeraAPI", "PrimeraAPI\PrimeraAPI.csproj", "{B77BBEEE-1DC6-CA5B-46B4-62403C1C308E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaMVC", "TiendaMVC\TiendaMVC.csproj", "{DA8371B4-81F8-59B8-DE9D-9BB3524C4B1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TiendaMVC", "TiendaMVC", "{4CC0E631-0A36-4630-B617-EF31C8B1BAF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaMVC.Tests", "TiendaMVC\TiendaMVC.Tests\TiendaMVC.Tests.csproj", "{59B8ED12-7AA5-462E-8E37-60422B49BF0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,11 +30,19 @@ Global
 		{DA8371B4-81F8-59B8-DE9D-9BB3524C4B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA8371B4-81F8-59B8-DE9D-9BB3524C4B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA8371B4-81F8-59B8-DE9D-9BB3524C4B1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59B8ED12-7AA5-462E-8E37-60422B49BF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59B8ED12-7AA5-462E-8E37-60422B49BF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59B8ED12-7AA5-462E-8E37-60422B49BF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59B8ED12-7AA5-462E-8E37-60422B49BF0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1414BC2-48FC-401B-9FF5-189D2F5C72AD}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA8371B4-81F8-59B8-DE9D-9BB3524C4B1B} = {4CC0E631-0A36-4630-B617-EF31C8B1BAF2}
+		{59B8ED12-7AA5-462E-8E37-60422B49BF0B} = {4CC0E631-0A36-4630-B617-EF31C8B1BAF2}
 	EndGlobalSection
 EndGlobal
