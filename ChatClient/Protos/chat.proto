@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcChat";
+
+package chat;
+
+// Mensaje enviado por cada usuario
+message ChatMessage {
+    string user = 1;
+    string text = 2;
+    int64 timestamp = 3;
+}
+
+// Este es el que nos hace la conexión bidireccional
+service ChatService {
+    rpc Chat(stream ChatMessage) returns (stream ChatMessage);
+}
