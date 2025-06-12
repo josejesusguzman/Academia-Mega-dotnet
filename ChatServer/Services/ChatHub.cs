@@ -1,5 +1,6 @@
 using System.Collections.Concurrent;
 using GrpcChat;
+using Grpc.Core;
 
 namespace ChatServer.Services;
 
@@ -8,8 +9,7 @@ namespace ChatServer.Services;
 ///</summary>
 public class ChatHub
 {
-    private readonly ConcurrentDictionary<string, IServerStreamWriter<ChatMessage>> 
-        _streams = new();
+    private readonly ConcurrentDictionary<string, IServerStreamWriter<ChatMessage>> _streams = new();
 
     public void Join(string user, IServerStreamWriter<ChatMessage> stream)
         => _streams[user] = stream;
@@ -21,7 +21,7 @@ public class ChatHub
     {
         foreach (var item in _streams)
         {
-            if (ct.IsCancellationRequest) break;
+            if (ct.IsCancellationRequested) break;
             await item.Value.WriteAsync(msg);
         }
     }

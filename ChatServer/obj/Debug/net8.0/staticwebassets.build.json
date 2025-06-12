@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "xbiy+7VgQsk7u4eSODuClC4cYVz+FjX5hQm2xeE1aPM=",
+  "Source": "ChatServer",
+  "BasePath": "_content/ChatServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -52,6 +52,8 @@
               "version": "[2.71.0, )"
             },
             "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.72.0, )"
             }
